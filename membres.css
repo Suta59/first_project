@@ -1,0 +1,148 @@
+:root {
+    --color_primary: #1a1a1a;
+    --color_secondary: #f2f2f2;
+    --color_terciary: #0BDA51;
+    --card_border_radius: 10px;
+}
+
+/*      Main         */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+main h1 {
+    margin: 32px;
+}
+
+main img {
+    height: 100px;
+}
+
+main h3 {
+    font-size: 30px;
+}
+
+.direction, .employe, .members {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.card_employe {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.card_employe img {
+    border-radius: var(--card_border_radius);
+}
+
+.card_member {
+    width: 300px;
+}
+
+.card_info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card_placement {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /*      menu  burger         */
+
+    #burger-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #burger-menu input:checked ~ #burger-menu-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  #burger-menu-items {
+    display: none;
+  }
+
+  #burger-menu-items a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--color_terciary);
+    padding: 24px;
+  }
+
+  #burger-menu label {
+    display: flex;
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*    responsive   */
+
+
+
+  main {
+    line-height: normal;
+  }
+
+  main h2 {
+    margin-top: 32px;
+  }
+
+  .card_placement {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card_employe, .card_member {
+    width: 100%;
+    margin: 0;
+  }
+
+  .direction,
+  .employe,
+  .members {
+    align-items: center;
+    gap: 50px;
+  }
+
+  main h1 {
+    font-size: 40px;
+}
+
+main h2 {
+    font-size: 30px;
+}
+
+}

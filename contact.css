@@ -1,0 +1,284 @@
+:root {
+    --color_primary: #1a1a1a;
+    --color_secondary: #f2f2f2;
+    --color_terciary: #0BDA51;
+    --card_border_radius: 30px;
+}
+
+/*      Info         */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px;
+}
+
+.media_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.media_p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.media_p p {
+    width: 30%;
+    text-align: start; 
+}
+
+.contact_media {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.media_icons {
+    height: 80%;
+}
+
+.contact_p{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    text-align: start;
+    justify-content: space-evenly;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: var(--card_border_radius) var(--card_border_radius) 0px 0px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+
+}
+
+.card_media, .card_contact {
+    height: 300px;
+}
+
+/*      Formulaire       */
+
+.inscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    padding: 32px;
+    margin: 32px;
+    background-color: var(--color_secondary);
+    border: 2px solid var(--color_primary);
+    border-radius: var(--card_border_radius);
+}
+
+.form h3 {
+    font-size: 27px;
+    margin-top: 24px;
+}
+
+.form h2 {
+    margin: 24px 0;
+}
+
+.name_genre {
+    display: flex;
+    justify-content: flex-start;
+}
+
+select {
+    height: 35px;
+}
+
+.identity_input {
+    display: flex;
+    gap: 24px;
+}
+
+.form_space {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  
+}
+
+input {
+    width: 200px;
+}
+
+.other_info input {
+    width: 80%;
+    height: 130px;
+}
+
+main textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100px;
+  padding: 8px;
+}
+
+main input {
+  width: 40%;
+  max-width: 100%;
+  padding: 8px;
+}
+.validation_message {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+}
+
+/*      faux form        */
+
+main input[type="checkbox"] {
+  display: none;
+}
+
+main input[type="checkbox"]:checked ~ .inscription {
+  display: none;
+}
+
+main input[type="checkbox"]:checked ~ .validation_message {
+  display: flex;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /*      menu  burger         */
+
+    #burger-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #burger-menu input:checked ~ #burger-menu-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  #burger-menu-items {
+    display: none;
+  }
+
+  #burger-menu-items a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--color_terciary);
+    padding: 24px;
+  }
+
+  #burger-menu label {
+    display: flex;
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*    responsive   */
+
+  .contact_media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_map {
+    align-self: center;
+  }
+
+  .card_media, .card_contact {
+    padding: 32px;
+    height: auto;
+  }
+
+  .adress {
+    width: 100%;
+  }
+
+  main h2, main h3{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .info {
+    padding: 0;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .contact_p {
+    gap: 35px;
+    text-align: center;
+}
+
+  /* FORM */
+
+
+  .form {
+    width: 100%;
+  }
+
+  .identity_input,
+  .name_genre,
+  .mail,
+  .tel,
+  .other_info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main input {
+    width: 100%;
+  }
+
+  .validation_message {
+    text-align: center;
+  }
+}
