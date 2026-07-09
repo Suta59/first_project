@@ -1,0 +1,202 @@
+:root {
+    --color_primary: #1a1a1a;
+    --color_secondary: #f2f2f2;
+    --color_terciary: #0BDA51;
+    --card_border_radius: 10px;
+}
+
+main > * {
+    height: 800px;
+}
+
+header {
+    border-bottom: 5px solid var(--color_secondary)
+}
+/*      banner       */
+.banner {
+    display: flex;
+    width: 100%;
+    background-color: var(--color_primary);
+    color: var(--color_secondary);
+}
+
+.banner_img {
+    width: 51%;
+    height: 100%;
+    background: linear-gradient(to right, var(--color_primary), 65%, transparent), url("images/banner_knight.png");
+    background-size: 100%;
+    background-position: center;
+}
+
+.banner_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    gap: 32px;
+}
+
+/*      présentation         */
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 32px;
+}
+
+/*      info flash       */
+
+.info_flash {
+    display: flex;
+    background-color: var(--color_primary);
+    color: var(--color_secondary);
+    padding: 32px 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    width: 33.33%;
+    gap: 32px;
+    border-right: 1px solid var(--color_secondary);
+    border-left: 1px solid var(--color_secondary);
+}
+
+.info p {
+    height: 33%;
+}
+
+/*      preview pages        */
+
+.preview_pages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    padding: 32px;
+    gap: 32px;
+    border-right: 4px solid var(--color_primary) 
+}
+
+.preview p {
+    height: 50%;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /*      menu  burger         */
+
+    #burger-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #burger-menu input:checked ~ #burger-menu-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  #burger-menu-items {
+    display: none;
+  }
+
+  #burger-menu-items a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--color_terciary);
+    padding: 24px;
+  }
+
+  #burger-menu label {
+    display: flex;
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*        responsive       */
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+
+  .banner h1 {
+    line-height: 80px;
+  }
+
+  .banner_img {
+    background: linear-gradient(to bottom, var(--color_primary), 65%, transparent), url("images/banner_knight.png");
+    background-size: 100%;
+    background-position: bottom;
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .presentation {
+    text-align: center;
+  }
+
+  .info_flash{
+    flex-direction: column;
+    padding: 32px 8px;
+    height: auto;
+
+  }
+
+  .info {
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--color_secondary);
+  }
+  
+  .info p {
+    height: auto;
+  }
+
+  .preview_pages {
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+  }
+
+  .preview {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--color_primary);
+  }
+
+
+}
