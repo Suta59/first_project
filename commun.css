@@ -41,7 +41,8 @@ a, label {
 
 header nav {
     display: flex;
-    width: 35%;
+    justify-content: flex-end;
+    width: 55%;
     gap: 30px;
 }
 
@@ -186,6 +187,14 @@ footer >* {
     flex-direction: column;
     align-items: center;
     width: 33.3%;
+    gap: 32px;
+}
+
+.credits div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     gap: 32px;
 }
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="commun.css">
-    <link rel="stylesheet" href="membres.css">
-    <title>Membres</title>
+    <link rel="stylesheet" href="apprendre.css">
+    <title>Apprendre à jouer</title>
     <link rel="icon" type="image/x-icon" href="images/logo_rook.png">
 </head>
 <body>
@@ -35,105 +35,109 @@
         </nav>
     </header>
     <main>
-        <h1>Nos membres</h1>
-        <div class="direction">
-            <h2>Direction</h2>
-            <div class="card_placement">
-                <div class="card card_employe">
-                    <img src="images/picture_director.jpg"  alt="photo du directeur">
-                    <div class="card_info">
-                        <h3>John</h3>
-                        <hr>
-                        <p>directeur</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="employe">
-            <h2>Employés</h2>
-            <div class="card_placement">
-                <div class="card card_employe">
-                    <img src="images/picture_treasurer.jpg"  alt="photo du trésorier">
-                    <div class="card_info">
-                        <h3>Antoine</h3>
-                        <hr>
-                        <p>Trésorier</p>
-                    </div>
-                </div>
-
-                <div class="card card_employe">
-                    <img src="images/picture_teacher.jpg"  alt="photo du professeur">
-                    <div class="card_info">
-                        <h3>Eric</h3>
-                        <hr>
-                        <p>Professeur</p>
-                    </div>
-                </div>
-
-                <div class="card card_employe">
-                    <img src="images/picture_coach.jpg"  alt="photo du professeur">
-                    <div class="card_info">
-                        <h3>Vlad</h3>
-                        <hr>
-                        <p>Professeur</p>
-                    </div>
-                </div>
-                
+        <h1>Apprendre à jouer</h1>
+        <div class="intro card">
+            <img src="images/illustration_chessboard.png" alt="illustration plateau d'échec">
+            <div>
+                <p>Les échecs sont un jeu de stratégie qui oppose deux joueurs sur un plateau de 64 cases. Chaque joueur dispose de 16 pièces, chacune ayant une manière de se déplacer qui lui est propre. L'objectif est de mettre le roi adverse en échec et mat, c'est-à-dire dans une position où il ne peut plus échapper à une capture. Ce jeu demande de la réflexion, de l'anticipation et de la concentration, car chaque coup peut influencer le reste de la partie.</p>
             </div>
             
         </div>
-        <div class="members">
-            <h2>Membres</h2>
-            <div class="card_placement">
-                <div class="card card_member">
-                    <div class="card_info">
-                        <h3>Léa</h3>
-                        <hr>
-                        <p>Membre</p>
-                    </div>
-                </div>
+        <div class="cards_container">
 
-                <div class="card card_member">
-                    <div class="card_info">
-                        <h3>Gabriel</h3>
-                        <hr>
-                        <p>Membre</p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/image_pieces_king.PNG" alt="placholder">
                     </div>
-                </div>
-
-                <div class="card card_member">
-                    <div class="card_info">
-                        <h3>Inès</h3>
-                        <hr>
-                        <p>Membre</p>
-                    </div>
-                </div>
-
-                <div class="card card_member">
-                    <div class="card_info">
-                        <h3>Nathan</h3>
-                        <hr>
-                        <p>Membre</p>
-                    </div>
-                </div>
-
-                <div class="card card_member">
-                    <div class="card_info">
-                        <h3>Chloé</h3>
-                        <hr>
-                        <p>Membre</p>
-                    </div>
-                </div>
-
-                <div class="card card_member">
-                    <div class="card_info">
-                        <h3>Hugo</h3>
-                        <hr>
-                        <p>Membre</p>
-                    </div>
+                
+                <div class="flip-card-back">
+                    <h2>Le Roi</h2>
+                    <p>Le roi est la pièce la plus importante du jeu. Il peut se déplacer d'une seule case dans toutes les directions : horizontalement, verticalement ou en diagonale. L'objectif principal est de protéger son roi tout en essayant de mettre celui de l'adversaire en échec et mat. Si le roi est menacé, il doit obligatoirement se mettre en sécurité.
+                    </p>
                 </div>
             </div>
+                
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/image_pieces_queen.PNG" alt="placholder">                        
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>La Reine</h2>
+                        <p>La reine est la pièce la plus puissante des échecs. Elle peut se déplacer d'autant de cases qu'elle le souhaite, horizontalement, verticalement ou en diagonale, tant qu'aucune autre pièce ne bloque son chemin. Grâce à sa grande mobilité, elle est très utile pour attaquer et défendre.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/image_pieces_pawn.PNG" alt="placholder">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Le Pion</h2>
+                        <p>Le pion est la pièce la plus nombreuse. Il avance d'une case vers l'avant, mais peut avancer de deux cases lors de son tout premier déplacement. Pour capturer une pièce adverse, il se déplace d'une case en diagonale. Lorsqu'un pion atteint la dernière rangée du plateau, il est promu et peut être transformé en reine, tour, fou ou cavalier, selon le choix du joueur.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/image_pieces_rook.PNG" alt="placholder">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>La Tour</h2>
+                        <p>La tour se déplace en ligne droite, horizontalement ou verticalement, sur autant de cases qu'elle le souhaite. Elle est particulièrement efficace pour contrôler les colonnes et les rangées du plateau. Les deux tours peuvent également participer au roque avec le roi, un coup spécial permettant de mieux protéger le roi.
+                    </p>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/image_pieces_bishop.PNG" alt="placholder">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Le Fou</h2>
+                        <p>Le fou se déplace uniquement en diagonale sur autant de cases qu'il le souhaite. Chaque fou reste toujours sur la couleur de case sur laquelle il commence la partie : un fou sur les cases blanches et l'autre sur les cases noires. Il est très efficace pour contrôler de longues diagonales.
+                        </p>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/image_pieces_knight.PNG" alt="placholder">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Le Cavalier</h2>
+                        <p>Le cavalier est une pièce unique, car il se déplace en formant un « L » : deux cases dans une direction, puis une case sur le côté. C'est la seule pièce qui peut sauter par-dessus les autres. Son déplacement particulier en fait une pièce très utile pour surprendre l'adversaire.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>            
+        </div>
+        <div class="outro card">
+            <img src="images/outro_illustration.png" alt="placholder">
+            <p>Les échecs sont bien plus qu'un simple jeu : ils développent la réflexion, la patience et le sens de la stratégie. En appliquant les règles et en s'entraînant régulièrement, chacun peut progresser et prendre plaisir à relever de nouveaux défis. Que la partie commence, et surtout, amusez-vous !
+            </p>
         </div>
     </main>
     <footer>
